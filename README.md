@@ -18,3 +18,7 @@ docker run --rm --gpus all --network none \
 ```
 
 The container writes `/output/radiology-text-reports.json`. CT studies, annotations, reports and optimizer states are not included. Use the models for research.
+
+## License
+
+MSIIP's original contributions are released under [Apache-2.0](LICENSE). This grant does not relicense third-party material, including portions inherited from the HEADLINE starter kit. Any upstream notices and applicable terms continue to apply.
