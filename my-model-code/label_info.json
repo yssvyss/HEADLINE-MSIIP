@@ -1,0 +1,591 @@
+{
+  "total_samples": 16468,
+  "finding_count": 50,
+  "diagnosis_count": 50,
+  "finding_labels": [
+    {
+      "column": "finding_top01_hypodensity",
+      "label": "hypodensity",
+      "frequency": 5081,
+      "rate": 0.30853777022103474
+    },
+    {
+      "column": "finding_top02_hematoma_blood_collection",
+      "label": "hematoma/blood collection",
+      "frequency": 4793,
+      "rate": 0.29104930774836046
+    },
+    {
+      "column": "finding_top03_parenchymal_defect",
+      "label": "parenchymal defect",
+      "frequency": 3469,
+      "rate": 0.21065095943648288
+    },
+    {
+      "column": "finding_top04_calcification",
+      "label": "calcification",
+      "frequency": 3113,
+      "rate": 0.1890332766577605
+    },
+    {
+      "column": "finding_top05_mucosal_thickening_swelling",
+      "label": "mucosal thickening/swelling",
+      "frequency": 2755,
+      "rate": 0.1672941462229779
+    },
+    {
+      "column": "finding_top06_pneumocephalus_intracranial_air",
+      "label": "pneumocephalus/intracranial air",
+      "frequency": 2421,
+      "rate": 0.14701238766091815
+    },
+    {
+      "column": "finding_top07_csf_space_enlargement",
+      "label": "CSF space enlargement",
+      "frequency": 2294,
+      "rate": 0.13930046150109304
+    },
+    {
+      "column": "finding_top08_ventricular_enlargement",
+      "label": "ventricular enlargement",
+      "frequency": 2257,
+      "rate": 0.13705367986397862
+    },
+    {
+      "column": "finding_top09_midline_shift",
+      "label": "midline shift",
+      "frequency": 2090,
+      "rate": 0.12691280058294874
+    },
+    {
+      "column": "finding_top10_unspecified_hemorrhage",
+      "label": "unspecified hemorrhage",
+      "frequency": 1938,
+      "rate": 0.11768277872237067
+    },
+    {
+      "column": "finding_top11_brain_volume_reduction",
+      "label": "brain volume reduction",
+      "frequency": 1706,
+      "rate": 0.10359485061938305
+    },
+    {
+      "column": "finding_top12_hyperdensity",
+      "label": "hyperdensity",
+      "frequency": 1564,
+      "rate": 0.09497206703910614
+    },
+    {
+      "column": "finding_top13_csf_accumulation",
+      "label": "CSF accumulation",
+      "frequency": 1409,
+      "rate": 0.0855598736944377
+    },
+    {
+      "column": "finding_top14_mass",
+      "label": "mass",
+      "frequency": 1174,
+      "rate": 0.07128977410735973
+    },
+    {
+      "column": "finding_top15_perifocal_edema",
+      "label": "perifocal edema",
+      "frequency": 1174,
+      "rate": 0.07128977410735973
+    },
+    {
+      "column": "finding_top16_mass_effect",
+      "label": "mass effect",
+      "frequency": 1162,
+      "rate": 0.07056108817099829
+    },
+    {
+      "column": "finding_top17_ventricular_narrowing_compression",
+      "label": "ventricular narrowing/compression",
+      "frequency": 863,
+      "rate": 0.05240466358999271
+    },
+    {
+      "column": "finding_top18_fracture",
+      "label": "fracture",
+      "frequency": 826,
+      "rate": 0.05015788195287831
+    },
+    {
+      "column": "finding_top19_catheter_tip",
+      "label": "catheter tip",
+      "frequency": 759,
+      "rate": 0.046089385474860335
+    },
+    {
+      "column": "finding_top20_galeal_subgaleal_hematoma",
+      "label": "galeal/subgaleal hematoma",
+      "frequency": 698,
+      "rate": 0.04238523196502308
+    },
+    {
+      "column": "finding_top21_cerebral_edema",
+      "label": "cerebral edema",
+      "frequency": 624,
+      "rate": 0.037891668690794265
+    },
+    {
+      "column": "finding_top22_blood_level",
+      "label": "blood level",
+      "frequency": 619,
+      "rate": 0.037588049550643675
+    },
+    {
+      "column": "finding_top23_brain_parenchymal_herniation",
+      "label": "brain parenchymal herniation",
+      "frequency": 618,
+      "rate": 0.03752732572261355
+    },
+    {
+      "column": "finding_top24_ventricular_compression",
+      "label": "ventricular compression",
+      "frequency": 608,
+      "rate": 0.036920087442312365
+    },
+    {
+      "column": "finding_top25_foreign_material",
+      "label": "foreign material",
+      "frequency": 577,
+      "rate": 0.03503764877337867
+    },
+    {
+      "column": "finding_top26_hyperostosis_bone_thickening",
+      "label": "hyperostosis/bone thickening",
+      "frequency": 574,
+      "rate": 0.03485547728928832
+    },
+    {
+      "column": "finding_top27_loss_of_gray_white_differentiation",
+      "label": "loss of gray-white differentiation",
+      "frequency": 538,
+      "rate": 0.032669419480204034
+    },
+    {
+      "column": "finding_top28_cystic_lesion",
+      "label": "cystic lesion",
+      "frequency": 506,
+      "rate": 0.030726256983240222
+    },
+    {
+      "column": "finding_top29_sinus_secretion",
+      "label": "sinus secretion",
+      "frequency": 476,
+      "rate": 0.02890454214233665
+    },
+    {
+      "column": "finding_top30_pseudophakia",
+      "label": "pseudophakia",
+      "frequency": 469,
+      "rate": 0.02847947534612582
+    },
+    {
+      "column": "finding_top31_hardening_artifact",
+      "label": "hardening artifact",
+      "frequency": 447,
+      "rate": 0.027143551129463202
+    },
+    {
+      "column": "finding_top32_postoperative_defect",
+      "label": "postoperative defect",
+      "frequency": 440,
+      "rate": 0.026718484333252367
+    },
+    {
+      "column": "finding_top33_sinus_hypoplasia",
+      "label": "sinus hypoplasia",
+      "frequency": 367,
+      "rate": 0.02228564488705368
+    },
+    {
+      "column": "finding_top34_sinus_opacification",
+      "label": "sinus opacification",
+      "frequency": 357,
+      "rate": 0.02167840660675249
+    },
+    {
+      "column": "finding_top35_mastoid_fluid_opacification",
+      "label": "mastoid fluid/opacification",
+      "frequency": 353,
+      "rate": 0.021435511294632014
+    },
+    {
+      "column": "finding_top36_vascular_calcification",
+      "label": "vascular calcification",
+      "frequency": 330,
+      "rate": 0.020038863249939275
+    },
+    {
+      "column": "finding_top37_sulcal_effacement",
+      "label": "sulcal effacement",
+      "frequency": 322,
+      "rate": 0.019553072625698324
+    },
+    {
+      "column": "finding_top38_bone_defect",
+      "label": "bone defect",
+      "frequency": 313,
+      "rate": 0.01900655817342725
+    },
+    {
+      "column": "finding_top39_bone_flap",
+      "label": "bone flap",
+      "frequency": 304,
+      "rate": 0.018460043721156182
+    },
+    {
+      "column": "finding_top40_resection_cavity",
+      "label": "resection cavity",
+      "frequency": 299,
+      "rate": 0.018156424581005588
+    },
+    {
+      "column": "finding_top41_craniectomy_defect",
+      "label": "craniectomy defect",
+      "frequency": 294,
+      "rate": 0.01785280544085499
+    },
+    {
+      "column": "finding_top42_burr_hole_defect",
+      "label": "burr-hole defect",
+      "frequency": 290,
+      "rate": 0.017609910128734516
+    },
+    {
+      "column": "finding_top43_paranasal_sinus_displacement",
+      "label": "paranasal sinus displacement",
+      "frequency": 285,
+      "rate": 0.01730629098858392
+    },
+    {
+      "column": "finding_top44_herniation",
+      "label": "herniation",
+      "frequency": 280,
+      "rate": 0.017002671848433324
+    },
+    {
+      "column": "finding_top45_dense_artery_sign",
+      "label": "dense artery sign",
+      "frequency": 271,
+      "rate": 0.016456157396162255
+    },
+    {
+      "column": "finding_top46_ventricular_asymmetry",
+      "label": "ventricular asymmetry",
+      "frequency": 241,
+      "rate": 0.014634442555258684
+    },
+    {
+      "column": "finding_top47_interhemispheric_fissure_widening",
+      "label": "interhemispheric fissure widening",
+      "frequency": 235,
+      "rate": 0.01427009958707797
+    },
+    {
+      "column": "finding_top49_soft_tissue_hematoma",
+      "label": "soft-tissue hematoma",
+      "frequency": 222,
+      "rate": 0.013480689822686423
+    }
+  ],
+  "diagnosis_labels": [
+    {
+      "column": "diagnosis_top01_subdural_hematoma",
+      "label": "subdural hematoma",
+      "frequency": 2194,
+      "rate": 0.13322807869808112
+    },
+    {
+      "column": "diagnosis_top02_infarct",
+      "label": "infarct",
+      "frequency": 1553,
+      "rate": 0.09430410493077483
+    },
+    {
+      "column": "diagnosis_top03_subarachnoid_hemorrhage",
+      "label": "subarachnoid hemorrhage",
+      "frequency": 1169,
+      "rate": 0.07098615496720913
+    },
+    {
+      "column": "diagnosis_top04_intracranial_hemorrhage",
+      "label": "intracranial hemorrhage",
+      "frequency": 1163,
+      "rate": 0.07062181199902842
+    },
+    {
+      "column": "diagnosis_top05_microangiopathic_change",
+      "label": "microangiopathic change",
+      "frequency": 905,
+      "rate": 0.054955064367257715
+    },
+    {
+      "column": "diagnosis_top06_parenchymal_hemorrhage",
+      "label": "parenchymal hemorrhage",
+      "frequency": 884,
+      "rate": 0.05367986397862521
+    },
+    {
+      "column": "diagnosis_top07_infarct_demarcation",
+      "label": "infarct demarcation",
+      "frequency": 710,
+      "rate": 0.0431139179013845
+    },
+    {
+      "column": "diagnosis_top08_subdural_hygroma",
+      "label": "subdural hygroma",
+      "frequency": 658,
+      "rate": 0.03995627884381831
+    },
+    {
+      "column": "diagnosis_top09_lacunar_defect",
+      "label": "lacunar defect",
+      "frequency": 547,
+      "rate": 0.0332159339324751
+    },
+    {
+      "column": "diagnosis_top10_hydrocephalus",
+      "label": "hydrocephalus",
+      "frequency": 525,
+      "rate": 0.031880009715812486
+    },
+    {
+      "column": "diagnosis_top11_leukoencephalopathy",
+      "label": "leukoencephalopathy",
+      "frequency": 506,
+      "rate": 0.030726256983240222
+    },
+    {
+      "column": "diagnosis_top12_postoperative_change",
+      "label": "postoperative change",
+      "frequency": 498,
+      "rate": 0.030240466358999272
+    },
+    {
+      "column": "diagnosis_top13_intraventricular_hemorrhage",
+      "label": "intraventricular hemorrhage",
+      "frequency": 380,
+      "rate": 0.02307505465144523
+    },
+    {
+      "column": "diagnosis_top14_vp_shunt",
+      "label": "vp shunt",
+      "frequency": 321,
+      "rate": 0.019492348797668205
+    },
+    {
+      "column": "diagnosis_top15_brain_atrophy",
+      "label": "brain atrophy",
+      "frequency": 317,
+      "rate": 0.01924945348554773
+    },
+    {
+      "column": "diagnosis_top16_contusion_hemorrhage",
+      "label": "contusion hemorrhage",
+      "frequency": 305,
+      "rate": 0.0185207675491863
+    },
+    {
+      "column": "diagnosis_top17_mass_lesion",
+      "label": "mass lesion",
+      "frequency": 257,
+      "rate": 0.015606023803740588
+    },
+    {
+      "column": "diagnosis_top18_post_ischemic_defect",
+      "label": "post-ischemic defect",
+      "frequency": 255,
+      "rate": 0.01548457614768035
+    },
+    {
+      "column": "diagnosis_top19_meningioma",
+      "label": "meningioma",
+      "frequency": 250,
+      "rate": 0.015180957007529755
+    },
+    {
+      "column": "diagnosis_top20_hemorrhagic_transformation",
+      "label": "hemorrhagic transformation",
+      "frequency": 241,
+      "rate": 0.014634442555258684
+    },
+    {
+      "column": "diagnosis_top21_evd",
+      "label": "evd",
+      "frequency": 229,
+      "rate": 0.013905756618897255
+    },
+    {
+      "column": "diagnosis_top22_contusion",
+      "label": "contusion",
+      "frequency": 224,
+      "rate": 0.01360213747874666
+    },
+    {
+      "column": "diagnosis_top23_sinusitis",
+      "label": "sinusitis",
+      "frequency": 187,
+      "rate": 0.011355355841632256
+    },
+    {
+      "column": "diagnosis_top24_metastasis",
+      "label": "metastasis",
+      "frequency": 186,
+      "rate": 0.011294632013602137
+    },
+    {
+      "column": "diagnosis_top25_hemicraniectomy",
+      "label": "hemicraniectomy",
+      "frequency": 169,
+      "rate": 0.010262326937090114
+    },
+    {
+      "column": "diagnosis_top26_residual_hematoma",
+      "label": "residual hematoma",
+      "frequency": 140,
+      "rate": 0.008501335924216662
+    },
+    {
+      "column": "diagnosis_top27_atherosclerosis",
+      "label": "atherosclerosis",
+      "frequency": 137,
+      "rate": 0.008319164440126306
+    },
+    {
+      "column": "diagnosis_top28_aneurysm",
+      "label": "aneurysm",
+      "frequency": 136,
+      "rate": 0.008258440612096187
+    },
+    {
+      "column": "diagnosis_top29_macroangiopathic_change",
+      "label": "macroangiopathic change",
+      "frequency": 127,
+      "rate": 0.007711926159825115
+    },
+    {
+      "column": "diagnosis_top30_csf_circulation_disturbance",
+      "label": "CSF circulation disturbance",
+      "frequency": 120,
+      "rate": 0.0072868593636142825
+    },
+    {
+      "column": "diagnosis_top31_inflammatory_process",
+      "label": "inflammatory process",
+      "frequency": 98,
+      "rate": 0.005950935146951664
+    },
+    {
+      "column": "diagnosis_top32_occlusion",
+      "label": "occlusion",
+      "frequency": 96,
+      "rate": 0.005829487490891426
+    },
+    {
+      "column": "diagnosis_top33_tumor_progression",
+      "label": "tumor progression",
+      "frequency": 93,
+      "rate": 0.005647316006801069
+    },
+    {
+      "column": "diagnosis_top34_rebleeding",
+      "label": "rebleeding",
+      "frequency": 90,
+      "rate": 0.005465144522710711
+    },
+    {
+      "column": "diagnosis_top35_csf_leak",
+      "label": "CSF leak",
+      "frequency": 79,
+      "rate": 0.004797182414379403
+    },
+    {
+      "column": "diagnosis_top36_encephalomalacic_defect",
+      "label": "encephalomalacic defect",
+      "frequency": 78,
+      "rate": 0.004736458586349283
+    },
+    {
+      "column": "diagnosis_top37_epidural_hematoma",
+      "label": "epidural hematoma",
+      "frequency": 67,
+      "rate": 0.004068496478017975
+    },
+    {
+      "column": "diagnosis_top38_glioblastoma",
+      "label": "glioblastoma",
+      "frequency": 65,
+      "rate": 0.003947048821957736
+    },
+    {
+      "column": "diagnosis_top39_subdural_drain",
+      "label": "subdural drain",
+      "frequency": 65,
+      "rate": 0.003947048821957736
+    },
+    {
+      "column": "diagnosis_top40_trepanation",
+      "label": "trepanation",
+      "frequency": 65,
+      "rate": 0.003947048821957736
+    },
+    {
+      "column": "diagnosis_top41_over_drainage",
+      "label": "over-drainage",
+      "frequency": 64,
+      "rate": 0.0038863249939276173
+    },
+    {
+      "column": "diagnosis_top42_arachnoid_cyst",
+      "label": "arachnoid cyst",
+      "frequency": 61,
+      "rate": 0.00370415350983726
+    },
+    {
+      "column": "diagnosis_top43_gliotic_change",
+      "label": "gliotic change",
+      "frequency": 61,
+      "rate": 0.00370415350983726
+    },
+    {
+      "column": "diagnosis_top44_cavernoma",
+      "label": "cavernoma",
+      "frequency": 59,
+      "rate": 0.003582705853777022
+    },
+    {
+      "column": "diagnosis_top45_white_matter_changes",
+      "label": "white matter changes",
+      "frequency": 52,
+      "rate": 0.003157639057566189
+    },
+    {
+      "column": "diagnosis_top46_residual_tumor",
+      "label": "residual tumor",
+      "frequency": 50,
+      "rate": 0.003036191401505951
+    },
+    {
+      "column": "diagnosis_top47_sinus_thrombosis",
+      "label": "sinus thrombosis",
+      "frequency": 46,
+      "rate": 0.002793296089385475
+    },
+    {
+      "column": "diagnosis_top48_abscess",
+      "label": "abscess",
+      "frequency": 44,
+      "rate": 0.002671848433325237
+    },
+    {
+      "column": "diagnosis_top50_postoperative_bleeding",
+      "label": "postoperative bleeding",
+      "frequency": 41,
+      "rate": 0.0024896769492348796
+    }
+  ]
+}

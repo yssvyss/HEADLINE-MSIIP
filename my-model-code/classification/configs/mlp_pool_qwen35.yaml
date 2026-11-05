@@ -1,0 +1,47 @@
+experiment_name: ori_both_top50_mlp_pool_focal_slice2d_single_qwen35_preprocess_workers
+data:
+  manifest_path: /tmp/headline26/inference_manifest.json
+  id_column: id
+  num_workers: 4
+  preprocess_in_workers: true
+  prefetch_factor: 4
+  persistent_workers: true
+ct:
+  windows:
+  - 40,80
+  - 40,120
+  - 40,160
+  input_size:
+  - 512
+  - 512
+  - 32
+  sampling_method: center_weighted
+  sampling_sigma_ratio: 0.22
+model:
+  vision_backend: qwen3_5
+  model_path: /opt/ml/model/multilabel/backbones/Qwen3.5-4B
+  freeze_vision: false
+  vision_mode: slice_2d
+  slice_token_pool: mean
+  head_type: mlp_pool
+  head_mlp_hidden_size: 2560
+  head_dropout: 0.1
+  torch_dtype: float16
+  attn_impl: flash_attention_2
+train:
+  output_dir: /tmp/headline26/classifier_training/mlp_pool_qwen35
+  num_epochs: 10
+  batch_size: 2
+  grad_accum_steps: 2
+  learning_rate: 2.0e-05
+  weight_decay: 0.01
+  warmup_ratio: 0.05
+  max_grad_norm: 1.0
+  seed: 42
+  log_steps: 10
+  eval_steps: null
+  save_steps: null
+  loss_type: focal
+  focal_gamma: 2.0
+  focal_alpha: auto
+  cuda_visible_devices: '0'

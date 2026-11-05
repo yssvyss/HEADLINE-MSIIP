@@ -1,0 +1,60 @@
+{
+  "models": [
+    {
+      "id": "mlp_pool",
+      "experiment_name": "ori_both_top50_mlp_pool_focal_slice2d_single_preprocess_workers",
+      "config": "configs/mlp_pool.yaml",
+      "checkpoint": "checkpoints/mlp_pool",
+      "output": "outputs/models/mlp_pool/predictions.json"
+    },
+    {
+      "id": "mlp_pool_qwen35",
+      "experiment_name": "ori_both_top50_mlp_pool_focal_slice2d_single_qwen35_preprocess_workers",
+      "config": "configs/mlp_pool_qwen35.yaml",
+      "checkpoint": "checkpoints/mlp_pool_qwen35",
+      "output": "outputs/models/mlp_pool_qwen35/predictions.json"
+    },
+    {
+      "id": "mlp_pool_qwen35_rcrop080",
+      "experiment_name": "ori_both_top50_mlp_pool_focal_slice2d_single_qwen35_rcrop080_preprocess_workers",
+      "config": "configs/mlp_pool_qwen35_rcrop080.yaml",
+      "checkpoint": "checkpoints/mlp_pool_qwen35_rcrop080",
+      "output": "outputs/models/mlp_pool_qwen35_rcrop080/predictions.json"
+    },
+    {
+      "id": "mlp_pool_rcrop080",
+      "experiment_name": "ori_both_top50_mlp_pool_focal_slice2d_single_rcrop080_preprocess_workers",
+      "config": "configs/mlp_pool_rcrop080.yaml",
+      "checkpoint": "checkpoints/mlp_pool_rcrop080",
+      "output": "outputs/models/mlp_pool_rcrop080/predictions.json"
+    },
+    {
+      "id": "query_attn",
+      "experiment_name": "ori_both_top50_query_attn_focal_slice2d_single_preprocess_workers",
+      "config": "configs/query_attn.yaml",
+      "checkpoint": "checkpoints/query_attn",
+      "output": "outputs/models/query_attn/predictions.json"
+    },
+    {
+      "id": "query_attn_qwen35",
+      "experiment_name": "ori_both_top50_query_attn_focal_slice2d_single_qwen35_preprocess_workers",
+      "config": "configs/query_attn_qwen35.yaml",
+      "checkpoint": "checkpoints/query_attn_qwen35",
+      "output": "outputs/models/query_attn_qwen35/predictions.json"
+    },
+    {
+      "id": "query_attn_qwen35_rcrop080",
+      "experiment_name": "ori_both_top50_query_attn_focal_slice2d_single_qwen35_rcrop080_preprocess_workers",
+      "config": "configs/query_attn_qwen35_rcrop080.yaml",
+      "checkpoint": "checkpoints/query_attn_qwen35_rcrop080",
+      "output": "outputs/models/query_attn_qwen35_rcrop080/predictions.json"
+    },
+    {
+      "id": "query_attn_rcrop080",
+      "experiment_name": "ori_both_top50_query_attn_focal_slice2d_single_rcrop080_preprocess_workers",
+      "config": "configs/query_attn_rcrop080.yaml",
+      "checkpoint": "checkpoints/query_attn_rcrop080",
+      "output": "outputs/models/query_attn_rcrop080/predictions.json"
+    }
+  ]
+}

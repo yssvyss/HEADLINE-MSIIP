@@ -1,0 +1,73 @@
+# Runtime dependencies for the HEADLINE26 Grand Challenge container.
+#
+# Target runtime:
+#   - Python 3.10
+#   - Grand Challenge NVIDIA driver 535 / CUDA 12.0 host
+#   - PyTorch CUDA 12.1 wheels
+#   - Step 2 classification ensemble with Qwen vision backbones
+#   - Step 4 Swift inference with the PyTorch/Transformers backend, not vLLM
+#
+# Do not explicitly add flash-attn, deepspeed, vLLM, cupy, CUDA 12.8/13
+# packages, notebooks, or training/evaluation-only packages from the source
+# conda envs to the submission image. ms_swift declares some broad optional-ish
+# runtime dependencies; this file keeps the direct requirements aligned with the
+# tested PyTorch path.
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# PyTorch runtime. torch pulls the matching CUDA 12.1 runtime wheels; nvjitlink
+# is pinned because nvidia-cusparse-cu12 otherwise accepts newer CUDA builds.
+torch==2.4.0+cu121
+torchvision==0.19.0+cu121
+nvidia-nvjitlink-cu12==12.1.105
+triton==3.0.0
+
+# Numeric/image/CT IO shared by Step 1/2 preprocessing, classification, and VLM.
+numpy==1.26.4
+SimpleITK==2.5.5
+nibabel==5.4.2
+av==17.0.1
+Pillow>=8
+PyYAML==6.0.3
+
+# Qwen vision/text runtime used by both Step 2 classification and Step 4 VLM.
+# Run both paths with sdpa attention; flash_attention_2 is intentionally not
+# installed.
+ms_swift==4.2.2
+transformers==5.2.0
+accelerate==1.13.0
+modelscope==1.36.3
+peft==0.19.1
+safetensors==0.7.0
+tokenizers==0.22.2
+qwen-vl-utils==0.0.14
+sentencepiece==0.2.2
+einops==0.8.2
+psutil>=5.9
+
+# Swift imports these dataset/utility packages even for local JSON inference.
+datasets==4.8.4
+pyarrow==24.0.0
+pandas==2.3.3
+aiohttp==3.14.1
+huggingface_hub==1.24.0
+tqdm==4.69.0
+regex==2026.7.19
+json-repair==0.61.6
+addict==2.4.0
+dacite==1.9.2
+sortedcontainers==2.4.0
+zstandard==0.25.0
+binpacking==2.0.1
+attrdict==2.0.1
+simplejson==4.1.1
+rouge==1.0.1
+nltk==3.10.0
+xxhash==3.8.1
+six==1.17.0
+importlib-resources==7.1.0
+
+# Request/validation stack used by transformers, huggingface_hub, and swift.
+requests==2.34.2
+packaging==26.0
+pydantic==2.13.4
