@@ -6,7 +6,7 @@ The runtime is based on the [HEADLINE participant starter kit](https://github.co
 
 ## Run the inference container
 
-Use Linux Docker with NVIDIA GPU support. The [separate model release](https://huggingface.co/yssvyss/HEADLINE-MSIIP) is being uploaded. Once public, download its files into a model directory containing `multilabel/` and `vlm/`. The input directory must follow the HEADLINE socket layout, including the soft-tissue volume and geometry JSON. Create a writable output directory before running.
+Use Linux Docker with NVIDIA GPU support. Download the [published model files](https://huggingface.co/yssvyss/HEADLINE-MSIIP) into a model directory containing `multilabel/` and `vlm/`. The input directory must follow the HEADLINE socket layout, including the soft-tissue volume and geometry JSON. Create a writable output directory before running.
 
 ```sh
 docker build -t msiip-headline .
